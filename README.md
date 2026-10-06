@@ -1,6 +1,6 @@
 # alpine-ssh
 
-OpenSSH クライアントを含む軽量な Alpine ベースの Docker イメージです。
+OpenSSH クライアントを含む軽量な Alpine ベースの Docker イメージ。
 
 ## 概要
 
@@ -8,7 +8,7 @@ OpenSSH クライアントを含む軽量な Alpine ベースの Docker イメ�
 - 含まれるパッケージ: `openssh-client`（`ssh`, `scp`, `sftp`, `ssh-keygen` など）
 - マルチアーキテクチャ対応: `linux/amd64`, `linux/arm64`
 
-GitHub Actions により毎日 1 回自動で再ビルドされ、常に最新の Alpine ベースイメージと最新の openssh-client が含まれる状態に保たれます。
+GitHub Actions により毎日 1 回自動で再ビルドされ、常に最新の Alpine ベースイメージと最新の openssh-client が含まれる状態に保たれる。
 
 ## イメージ
 
@@ -16,7 +16,7 @@ GitHub Actions により毎日 1 回自動で再ビルドされ、常に最新�
 ghcr.io/igarashi58426/alpine-ssh:latest
 ```
 
-`YYYYMMDD` 形式の日付タグも付与され、過去のビルドが蓄積されていきます（例: `20261006`）。
+`YYYY-MM-DD` 形式の日付タグも付与され、過去のビルドが蓄積されていきます（例: `2026-10-06`）。
 
 ## 使い方
 
