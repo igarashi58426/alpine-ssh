@@ -1,4 +1,4 @@
-# alpine-ssh
+# ssh-alpine
 
 OpenSSH クライアントを含む軽量な Alpine ベースの Docker イメージ。
 
@@ -13,7 +13,7 @@ GitHub Actions により毎日 1 回自動で再ビルドされ、常に最新�
 ## イメージ
 
 ```
-ghcr.io/igarashi58426/alpine-ssh:latest
+ghcr.io/igarashi58426/ssh-alpine:latest
 ```
 
 `YYYY-MM-DD` 形式の日付タグも付与され、過去のビルドが蓄積されていきます（例: `2026-10-06`）。
@@ -21,9 +21,9 @@ ghcr.io/igarashi58426/alpine-ssh:latest
 ## 使い方
 
 ```bash
-docker pull ghcr.io/igarashi58426/alpine-ssh:latest
+docker pull ghcr.io/igarashi58426/ssh-alpine:latest
 
-docker run --rm -it ghcr.io/igarashi58426/alpine-ssh:latest ssh user@example.com
+docker run --rm -it ghcr.io/igarashi58426/ssh-alpine:latest ssh user@example.com
 ```
 
 SSH 鍵をマウントする例:
@@ -31,7 +31,7 @@ SSH 鍵をマウントする例:
 ```bash
 docker run --rm -it \
   -v "$HOME/.ssh:/root/.ssh:ro" \
-  ghcr.io/igarashi58426/alpine-ssh:latest ssh -T git@github.com
+  ghcr.io/igarashi58426/ssh-alpine:latest ssh -T git@github.com
 ```
 
 ## CI/CD
